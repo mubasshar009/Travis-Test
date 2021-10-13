@@ -1,0 +1,17 @@
+languge:node_js
+node_js:
+  - "stable"
+
+script:
+  - npm install
+  - npm test
+  - npm run build
+
+
+deploy:
+  provider:surge
+  skip_cleanup:true
+  domain:http://free1111-head.surge.sh/
+  project:./build/
+on:
+  branch:master
