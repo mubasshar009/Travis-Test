@@ -14,4 +14,4 @@ deploy:
   domain:http://free1111-head.surge.sh/
   project:./build/
 on:
-  branch:master
+  branch:master 
